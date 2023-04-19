@@ -19,7 +19,8 @@ public class BooksController
 	   static Log log = LogFactory.getLog(BooksController.class.getName());
 
 //autowire the BooksService class
-BooksService booksService = new BooksService();
+@Autowired
+BooksService booksService;
 //creating a get mapping that retrieves all the books detail from the database 
 @GetMapping("/book")
 private List<Books> getAllBooks() 
