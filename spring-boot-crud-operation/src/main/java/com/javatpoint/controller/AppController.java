@@ -43,8 +43,8 @@ public class AppController {
 		
 		String from = email.getFromEmail();
 		String to = email.getToEmail();
-		System.out.println("from----"+from);
-		System.out.println("to---"+to);
+		System.out.println("from-email---"+from);
+		System.out.println("to--email-"+to);
 		
 		SimpleMailMessage message = new SimpleMailMessage();
 		message.setFrom(from);
